@@ -1,5 +1,7 @@
 # lab-nginx
 logs/
+html/
+!/html/*.html
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,vim,pycharm,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,vim,pycharm,visualstudiocode
@@ -209,4 +211,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,vim,pycharm,visualstudiocode
-
