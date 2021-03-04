@@ -1,7 +1,5 @@
 # Customize options
-/html/*
-!/html/*.html
-
+/html/lab/*
 /logs/*
 !.gitkeep
 
