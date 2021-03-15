@@ -11,4 +11,4 @@ EXPOSE 10000:10100
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
-CMD ["-p", "/app", "-c", "/app/conf/nginx.conf"]
+CMD ["-p", "/app", "-c", "/app/config/nginx.conf"]
