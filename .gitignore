@@ -1,7 +1,14 @@
-# Customize options
+# Created by yourself
+
+### Customize Options ###
+# Empty directories
 /html/lab/*
 /logs/*
 !.gitkeep
+
+# Sensitive files
+*.private.*
+!*.sample.*
 
 # Editor directories and files
 .idea
@@ -11,6 +18,8 @@
 *.njsproj
 *.sln
 *.sw?
+
+# End of yourself
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains,visualstudiocode,vim
