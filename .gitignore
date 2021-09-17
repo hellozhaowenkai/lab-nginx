@@ -2,6 +2,7 @@
 
 ### Customize Options ###
 # Empty directories
+/config/ssl/*
 /html/lab/*
 /logs/*
 !.gitkeep
