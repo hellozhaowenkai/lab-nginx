@@ -1,0 +1,9 @@
+{
+  "name": "lab-nginx",
+  "description": "The service connectivity platform for our microservices architecture, powered by NGINX.",
+  "repository": {
+    "url": "https://github.com/hellozhaowenkai/lab-nginx/",
+    "license": "Apache-2.0 License"
+  },
+  "keywords": ["docker", "nginx", "microservices"]
+}

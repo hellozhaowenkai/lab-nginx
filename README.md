@@ -13,7 +13,7 @@
 
 ```bash
 # Clone repository.
-git clone --recursive https://github.com/hellozhaowenkai/lab-nginx.git
+git clone --recursive https://github.com/hellozhaowenkai/lab-nginx/
 # Then into the project root directory.
 cd lab-nginx
 ```
