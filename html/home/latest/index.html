@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width" />
     <title>Welcome to lailai-lab!</title>
     <link href="/style.css" rel="stylesheet" />
-    <script src="/script.js"></script>
+    <!-- Subresource Integrity (SRI) -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/core-js-bundle@3.18.2/minified.js"
+      integrity="sha256-kaiAGGSivoQbPJgLiGk8ipdi9P3JiN9LQFYh9yYLHm4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/script.js"></script>
   </head>
   <body>
     <h1>Welcome to lailai-lab!</h1>
@@ -14,12 +21,10 @@
       microservices architecture is successfully deployed and working.
       <br />Further configuration is required.
     </p>
-
     <p>
       For online documentation and support please refer to our
       <a href="https://github.com/hellozhaowenkai/lab-nginx/">repository</a>.
     </p>
-
     <p><em>Thank you for using lailai-lab.</em></p>
   </body>
 </html>
