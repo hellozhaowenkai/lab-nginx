@@ -12,7 +12,7 @@
 ### Get repository
 
 ```bash
-# Clone repository.
+# Clone repository with submodules.
 git clone --recursive https://github.com/hellozhaowenkai/lab-nginx/
 # Then into the project root directory.
 cd lab-nginx
@@ -36,7 +36,7 @@ docker container run \
   --volume   $PWD/config:/app/config \
   --volume   $PWD/logs:/app/logs \
   --volume   $PWD/html:/app/html \
-  --restart  on-failure:3 \
+  --restart  unless-stopped \
   --interactive \
   --detach \
   lab-nginx:latest
@@ -82,7 +82,7 @@ nginx -g 'daemon off;' -p $PWD -c $PWD/config/nginx.conf
 
 ```bash
 docker container run --name=tmp-nginx-container --detach nginx:stable
-docker container cp tmp-nginx-container:/etc/nginx/nginx.conf $PWD/config/nginx.conf
+docker container cp tmp-nginx-container:/etc/nginx/. $PWD/config/
 docker container rm -f tmp-nginx-container
 ```
 
