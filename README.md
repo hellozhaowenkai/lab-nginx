@@ -1,6 +1,10 @@
 # lab-nginx
 
 [![Maintainer](https://img.shields.io/badge/Maintainer-KevInZhao-42b983.svg)](https://github.com/hellozhaowenkai/)
+[![Version](https://img.shields.io/github/v/tag/hellozhaowenkai/lab-nginx?label=Version)](https://github.com/hellozhaowenkai/dotpub/tags/)
+[![NGINX](https://img.shields.io/badge/NGINX-%3E%3D1.21-success)](https://nginx.org/)
+[![License](https://img.shields.io/github/license/hellozhaowenkai/lab-nginx?label=License)](LICENSE)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 🌏 The service connectivity platform for our microservices architecture, powered by NGINX. 🤩
 
