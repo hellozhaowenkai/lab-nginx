@@ -23,47 +23,14 @@ git clone --recursive https://github.com/hellozhaowenkai/lab-nginx.git
 cd lab-nginx
 ```
 
-### Build image
+### Lanch container
 
-```bash
-docker image build --tag=lab-nginx:latest $PWD
-```
-
-### Run container
-
-```bash
-docker container run \
-  --user     $(id -u) \
-  --name     lab-nginx \
-  --publish  80:80 \
-  --publish  443:443 \
-  --publish  8888:8888 \
-  --volume   $PWD/config:/app/config \
-  --volume   $PWD/logs:/app/logs \
-  --volume   $PWD/html:/app/html \
-  --restart  unless-stopped \
-  --interactive \
-  --detach \
-  lab-nginx:latest
-```
-
-### View log
-
-```bash
-docker container logs lab-nginx
-```
+See [Deploy Script](deploy.sh).
 
 ### Restart container
 
 ```bash
 docker container restart lab-nginx
-```
-
-### Delete container & image
-
-```bash
-docker container rm -f lab-nginx
-docker image rm lab-nginx:latest
 ```
 
 ## Usage
@@ -81,6 +48,12 @@ git fetch --all && git reset --hard origin/main && git pull
 
 ```bash
 nginx -g 'daemon off;' -p $PWD -c $PWD/config/nginx.conf
+```
+
+### Create the lab-net network
+
+```
+docker network create --driver=bridge lab-net
 ```
 
 ### Copy the default configuration from a running NGINX container
