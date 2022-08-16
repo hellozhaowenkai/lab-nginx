@@ -5,7 +5,10 @@ docker container rm -f lab-nginx
 docker image rm lab-nginx:latest
 
 # Build image
-docker image build --tag=lab-nginx:latest $PWD
+docker image build \
+  --tag   lab-nginx:latest \
+  --file  $PWD/ops/Dockerfile \
+  $PWD
 
 # Run container
 docker container run \
@@ -23,5 +26,5 @@ docker container run \
   --detach \
   lab-nginx:latest
 
-# View log
-docker container logs lab-nginx
+# View logs
+sleep 3s && docker container logs lab-nginx

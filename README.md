@@ -23,18 +23,6 @@ git clone --recursive https://github.com/hellozhaowenkai/lab-nginx.git
 cd lab-nginx
 ```
 
-### Lanch container
-
-See [Deploy Script](deploy.sh).
-
-### Restart container
-
-```bash
-docker container restart lab-nginx
-```
-
-## Usage
-
 ### Update the code
 
 ```bash
@@ -44,11 +32,25 @@ git pull --recurse-submodules=on-demand
 git fetch --all && git reset --hard origin/main && git pull
 ```
 
-### Running NGINX in the foreground without Docker
+### Launch container
 
 ```bash
-nginx -g 'daemon off;' -p $PWD -c $PWD/config/nginx.conf
+# Run [Deploy Script](ops/deploy.sh).
+sh ops/deploy.sh
 ```
+
+### Restart container
+
+```bash
+# Do it if you know what it mean.
+docker container restart lab-nginx
+```
+
+## Usage
+
+### Git LFS
+
+See [Git Large File Storage](https://git-lfs.github.com/).
 
 ### Create the lab-net network
 
@@ -62,6 +64,12 @@ docker network create --driver=bridge lab-net
 docker container run --name=tmp-nginx-container --detach nginx:stable
 docker container cp tmp-nginx-container:/etc/nginx/. $PWD/config/
 docker container rm -f tmp-nginx-container
+```
+
+### Running NGINX in the foreground without Docker
+
+```bash
+nginx -g 'daemon off;' -p $PWD -c $PWD/config/nginx.conf
 ```
 
 ### Issue the SSL certificate via NGINX container by acme.sh
