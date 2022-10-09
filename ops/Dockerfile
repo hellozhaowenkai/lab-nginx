@@ -7,7 +7,7 @@ FROM nginx:stable
 ENV TZ=Asia/Shanghai
 
 # make the `app` folder the current working directory
-WORKDIR /app
+WORKDIR /app/
 
 # copy project files and folders to the current working directory (i.e. `app` folder)
 COPY . .
@@ -21,4 +21,4 @@ EXPOSE 8888
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 # run NGINX server in `/app` prefix path
-CMD ["-p", "/app", "-c", "/app/config/nginx.conf"]
+CMD ["-p", "/app/", "-c", "/app/config/nginx.conf"]

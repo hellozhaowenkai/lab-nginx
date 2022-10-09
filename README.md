@@ -7,10 +7,13 @@
 [![License](https://img.shields.io/github/license/hellozhaowenkai/lab-nginx?label=License)](LICENSE)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-🌏 The service connectivity platform for our microservices architecture, powered by NGINX. 🤩
+## Description
 
-- [Quickstart](#quickstart)
-- [Usage](#usage)
+The service connectivity platform for our microservices architecture, powered by NGINX.
+
+## Codename
+
+`nginx` -> `Engine X`
 
 ## Quickstart
 

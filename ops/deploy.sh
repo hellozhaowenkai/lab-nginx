@@ -18,9 +18,9 @@ docker container run \
   --publish  80:80 \
   --publish  443:443 \
   --publish  8888:8888 \
-  --volume   $PWD/config:/app/config \
-  --volume   $PWD/logs:/app/logs \
-  --volume   $PWD/html:/app/html \
+  --volume   $PWD/config/:/app/config/ \
+  --volume   $PWD/logs/:/app/logs/ \
+  --volume   $PWD/html/:/app/html/ \
   --restart  unless-stopped \
   --interactive \
   --detach \
